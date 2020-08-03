@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="notify-section">
+        <div id="notificationBar" class="notify-section">
             <p class="notify wrong">❌ Pin Didn't Match, Please try again</p>
             <p class="notify right">✅ Pin Matched... Secret door is opening for you</p>
         </div>
@@ -58,7 +58,7 @@
     <script>
         // for Hiding notify-section first 
 
-        document.querySelector(".notify-section").style.display = "none";
+        document.getElementById("notificationBar").style.display = "none";
 
         // for Generating Random number 
 
@@ -121,7 +121,7 @@
 
           const newCurrentValue = currentValue.substring(0, currentValue.length - 1)
 
-          document.querySelector(".inputValueShower").value = newCurrentValue   
+          document.querySelector(".inputValueShower").value = newCurrentValue   ;
         }
 
 
